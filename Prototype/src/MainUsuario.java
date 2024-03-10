@@ -1,4 +1,4 @@
-public class Main {
+public class MainUsuario {
     public static void main(String[] args) throws CloneNotSupportedException {
         //Creamos un Usuario y le damos valores
         Usuario usuarioPrototype = new Usuario("Manuel","Rodriguez",20,"Soltero");
