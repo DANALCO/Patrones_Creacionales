@@ -1,25 +1,25 @@
 class CreadorPizza:
-  def crear_pizza(self, tipo):
-    if tipo == "vegetariana":
-      return PizzaVegetariana()
-    elif tipo == "pepperoni":
-      return PizzaPepperoni()
-    else:
-      raise ValueError("Tipo de pizza no válida")
+    def crear_pizza(self, tipo):
+        if tipo == "vegetariana":
+            return PizzaVegetariana()
+        elif tipo == "pepperoni":
+            return PizzaPepperoni()
+        else:
+            raise ValueError("Tipo de pizza no válida")
 
 class Pizza:
-  def _init_(self):
-    pass
+    def __init__(self):
+        pass
 
 class PizzaVegetariana(Pizza):
-  def _init_(self):
-    super()._init_()
-    print("Preparando pizza vegetariana...")
+    def __init__(self):
+        super().__init__()
+        print("Preparando pizza vegetariana...")
 
 class PizzaPepperoni(Pizza):
-  def _init_(self):
-    super()._init_()
-    print("Preparando pizza pepperoni...")
+    def __init__(self):
+        super().__init__()
+        print("Preparando pizza pepperoni...")
 
 creador = CreadorPizza()
 
